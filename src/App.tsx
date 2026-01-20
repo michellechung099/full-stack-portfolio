@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen text-gray-900 dark:text-gray-100 bg-[#FFF8FB] dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen text-gray-900 dark:text-gray-100 dark:bg-gray-900 transition-colors duration-300">
       <Navigation />
       <Hero />
       <About />

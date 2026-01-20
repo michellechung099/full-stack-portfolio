@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Send, Sparkles, Cat } from "lucide-react";
+import { Mail, Linkedin, Github, Send, Sparkles, Cat, Download } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -107,6 +107,14 @@ export default function Contact() {
               >
                 <Send size={20} />
                 Send Message
+              </a>
+              <a
+                href="/resume.pdf"
+                download="Michelle_Chung_Resume.pdf"
+                className="mt-5 btn-gradient inline-flex items-center gap-2 px-6 py-3 text-white font-semibold"
+              >
+                <Download size={20} />
+                Download Resume
               </a>
             </div>
           </div>
