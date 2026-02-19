@@ -27,8 +27,8 @@ export default function Hero() {
         </h2>
 
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Built for messy input, partial data, and real-world failures across
-          mobile, web, and backend.
+          Built for messy input, partial data, and when things break, across
+          mobile, web, and backend systems.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
