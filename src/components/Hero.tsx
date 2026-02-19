@@ -23,12 +23,12 @@ export default function Hero() {
         </h1>
 
         <h2 className="text-2xl md:text-3xl text-[#52D1C9] font-semibold mb-6">
-          I build calm, user-centered apps with React Native, FastAPI, and AI.
+          I turn prototypes into reliable products.
         </h2>
 
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-          What matters most in my work is clarity in UX, backend design, and
-          real-world performance.
+          Built for messy input, partial data, and real-world failures across
+          mobile, web, and backend.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

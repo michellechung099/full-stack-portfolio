@@ -2,13 +2,11 @@ import { Sparkles } from "lucide-react";
 
 export default function HowIBuild() {
   const steps = [
-    "Start with user pain points and emotional context",
-    "Sketch soft, minimal UI in Moqups or Figma",
-    "Design backend architecture (FastAPI + SQLModel + Supabase)",
-    "Add AI workflows only where they improve UX",
-    "Build calm, intuitive mobile flows with React Native",
-    "Ship early, iterate intentionally",
-    "Prioritize clarity, performance, and user trust",
+    "Model data and failure states before building screens",
+    "Ship minimal end-to-end flow early to validate assumptions",
+    "Assume real input is messy (typos, partial names, missing data)",
+    "Add logging, fallbacks and tests so failures don't break the app",
+    "Optimize only after measuring real bottlenecks",
   ];
 
   return (
