@@ -1,4 +1,12 @@
-import { Mail, Linkedin, Github, Send, Sparkles, Cat, Download } from "lucide-react";
+import {
+  Mail,
+  Linkedin,
+  Github,
+  Send,
+  Sparkles,
+  Cat,
+  Download,
+} from "lucide-react";
 
 export default function Contact() {
   return (
@@ -98,8 +106,8 @@ export default function Contact() {
                 Full-Stack Software Engineer
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Passionate about creating innovative solutions and pushing the
-                boundaries of what's possible with technology.
+                Building reliable products with React Native, FastAPI, Next.js,
+                and AI.
               </p>
               <a
                 href="mailto:mchung099@gmail.com"

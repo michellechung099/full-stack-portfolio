@@ -16,6 +16,8 @@ import skinstory7 from "../assets/skinstory-7.png";
 import architecture from "../assets/architecture-diagram.png";
 import wireframe from "../assets/wireframe.png";
 import demoVideo from "../assets/demo-video.mp4";
+import dashboard from "../assets/dashboard.png";
+import payment from "../assets/payment.png";
 
 export default function CaseStudy() {
   const highlights = [
@@ -53,7 +55,7 @@ export default function CaseStudy() {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E6FAF8] dark:bg-[#52D1C9]/20 rounded-full mb-6 border border-[#CCFBF1] dark:border-[#52D1C9]/40">
             <Sparkles size={16} className="text-[#52D1C9]" />
             <span className="text-[#0D9488] dark:text-[#52D1C9] text-sm font-semibold">
-              FEATURED CASE STUDY
+              FEATURED PROJECT
             </span>
           </div>
           <div className="flex items-center justify-center gap-3 mb-4">
@@ -249,6 +251,65 @@ export default function CaseStudy() {
               <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 High-level system diagram showing React Native → FastAPI →
                 SQLModel → Supabase → Playwright scraper pipeline.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Payments Dashboard */}
+        <div className="text-center mb-12 mt-12">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="text-[#52D1C9] text-2xl">✧</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+              Payments Dashboard
+            </h2>
+          </div>
+          <p className="text-xl text-gray-600 dark:text-gray-400">
+            Next.js • FastAPI • TypeScript
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <div className="flex items-center gap-3 mb-8">
+            <Image size={24} className="text-[#52D1C9]" />
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Main Dashboard
+            </h3>
+          </div>
+          <div className="soft-card overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-12">
+            <div className="text-center">
+              <img
+                src={dashboard}
+                className="w-md h-sm rounded-md mx-auto  max-w-full h-auto mb-4"
+              />
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Review, filter, and manage freelancer worklogs before payment
+                processing.
+                <br></br>
+                <span className="text-sm font-light text-gray-400 dark:text-gray-500">
+                  Developed for a GenieX technical assessment.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="flex items-center gap-3 mb-8">
+            <Image size={24} className="text-[#52D1C9]" />
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Batch Payment Review
+            </h3>
+          </div>
+          <div className="soft-card overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-12">
+            <div className="text-center">
+              <img
+                src={payment}
+                className="w-md h-sm rounded-md mx-auto  max-w-full h-auto mb-4"
+              />
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Multi-step approval workflow for validating payout batches and
+                confirming freelancer payments.
               </p>
             </div>
           </div>
