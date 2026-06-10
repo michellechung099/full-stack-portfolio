@@ -1,18 +1,18 @@
-import {
-  ExternalLink,
-  Github,
-  Zap,
-  Sparkles,
-  Image,
-  Video,
-} from "lucide-react";
-import skinstory1 from "../assets/skinstory-1.png";
-import skinstory2 from "../assets/skinstory-2.png";
-import skinstory3 from "../assets/skinstory-3.png";
-import skinstory4 from "../assets/skinstory-4.png";
-import skinstory5 from "../assets/skinstory-5.png";
-import skinstory6 from "../assets/skinstory-6.png";
-import skinstory7 from "../assets/skinstory-7.png";
+import { ExternalLink, Zap, Sparkles, Image, Video, Plane } from "lucide-react";
+import skinstory1 from "../assets/s1.png";
+import skinstory2 from "../assets/s2.png";
+import skinstory3 from "../assets/s3.png";
+import skinstory4 from "../assets/s4.png";
+import skinstory5 from "../assets/s5.png";
+import skinstory6 from "../assets/s6.png";
+import skinstory7 from "../assets/s7.png";
+import skinstory8 from "../assets/s8.png";
+import onboarding1 from "../assets/onboarding1.png";
+import onboarding2 from "../assets/onboarding2.png";
+import onboarding3 from "../assets/onboarding3.png";
+import onboarding4 from "../assets/onboarding4.png";
+import journal1 from "../assets/journal1.png";
+import productdetail from "../assets/productdetail.png";
 import architecture from "../assets/architecture-diagram.png";
 import wireframe from "../assets/wireframe.png";
 import demoVideo from "../assets/demo-video.mp4";
@@ -37,12 +37,19 @@ export default function CaseStudy() {
 
   const screenshots = [
     skinstory1,
+    onboarding1,
+    onboarding2,
+    onboarding3,
+    onboarding4,
+    journal1,
     skinstory2,
     skinstory3,
+    productdetail,
     skinstory4,
     skinstory5,
     skinstory6,
     skinstory7,
+    skinstory8,
   ];
 
   return (
@@ -180,11 +187,11 @@ export default function CaseStudy() {
                 Read the Case Study
               </a>
               <a
-                href="#"
+                href="https://testflight.apple.com/join/qd1BCadN"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-[#52D1C9] text-[#52D1C9] font-semibold hover:bg-[#E6FAF8] dark:hover:bg-[#52D1C9]/20 transition-colors rounded-full"
               >
-                <Github size={18} />
-                Code (available on request)
+                <Plane size={18} />
+                Live Demo (TestFlight)
               </a>
             </div>
           </div>
