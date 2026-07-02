@@ -19,6 +19,11 @@ import demoVideo from "../assets/demo-video.mp4";
 import dashboard from "../assets/dashboard.png";
 import payment from "../assets/payment.png";
 
+const SKIN_STORY_DEMO = {
+  email: "demo@gmail.com",
+  password: "password",
+};
+
 export default function CaseStudy() {
   const highlights = [
     "Async Playwright scraper for ingredient extraction",
@@ -193,6 +198,26 @@ export default function CaseStudy() {
                 <Plane size={18} />
                 Live Demo (TestFlight)
               </a>
+            </div>
+            <div className="mt-6 p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/60 dark:bg-gray-900/40">
+              <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                Demo account
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Email:{" "}
+                <span className="font-mono text-gray-800 dark:text-gray-200">
+                  {SKIN_STORY_DEMO.email}
+                </span>
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Password:{" "}
+                <span className="font-mono text-gray-800 dark:text-gray-200">
+                  {SKIN_STORY_DEMO.password}
+                </span>
+              </p>
+              <p className="text-xs font-light text-gray-500 dark:text-gray-500 mt-2">
+                Install via TestFlight, then sign in with the credentials above.
+              </p>
             </div>
           </div>
         </div>
