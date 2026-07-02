@@ -201,7 +201,7 @@ export default function CaseStudy() {
             </div>
             <div className="mt-6 p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/60 dark:bg-gray-900/40">
               <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                Demo account
+                Demo account (read only)
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Email:{" "}
