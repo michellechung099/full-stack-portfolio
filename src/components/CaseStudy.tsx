@@ -13,7 +13,6 @@ import onboarding3 from "../assets/onboarding3.png";
 import onboarding4 from "../assets/onboarding4.png";
 import journal1 from "../assets/journal1.png";
 import productdetail from "../assets/productdetail.png";
-import architecture from "../assets/architecture-diagram.png";
 import wireframe from "../assets/wireframe.png";
 import demoVideo from "../assets/demo-video.mp4";
 import dashboard from "../assets/dashboard.png";
@@ -34,10 +33,10 @@ export default function CaseStudy() {
   ];
 
   const results = [
-    "24% performance improvement after migrating from Selenium",
-    "Improved product lookup reliability via rate limiting and persistence",
-    "Consistent ingredient classification through normalized matching",
-    "Polished Expo-based mobile experience",
+    "Reduced scrape time by 24% after migrating from Selenium to Playwright.",
+    "Improved lookup recovery with persisted results and rate-limited fallback scraping.",
+    "Prevented duplicate ingredient mappings through normalized matching and batched inserts.",
+    "Released a public TestFlight build with a read-only demo account.",
   ];
 
   const screenshots = [
@@ -266,24 +265,54 @@ export default function CaseStudy() {
           </div>
         </div>
 
-        {/* Architecture Diagram */}
+        {/* React Native Onboarding Flow */}
+        <div className="text-center mb-12 mt-12">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <span className="text-[#52D1C9] text-2xl">✧</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+              React Native Onboarding Flow
+            </h2>
+          </div>
+          <p className="text-xl text-gray-600 dark:text-gray-400">
+            Client implementation · React Native · Firebase
+          </p>
+        </div>
+
         <div className="mt-12">
           <div className="flex items-center gap-3 mb-8">
-            <Zap size={24} className="text-[#52D1C9]" />
+            <Image size={24} className="text-[#52D1C9]" />
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Architecture
+              Provided Figma Designs
             </h3>
           </div>
           <div className="soft-card overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-12">
             <div className="text-center">
               <img
-                src={architecture}
-                className="w-md h-sm rounded-md mx-auto  max-w-full h-auto mb-4"
+                src={wireframe}
+                className="w-md h-sm rounded-md mx-auto max-w-full h-auto"
               />
-              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                High-level system diagram showing React Native → FastAPI →
-                SQLModel → Supabase → Playwright scraper pipeline.
-              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="flex items-center gap-3 mb-8">
+            <Video size={24} className="text-[#52D1C9]" />
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+              Demo Video
+            </h3>
+          </div>
+
+          <div className="soft-card overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-6 md:p-8">
+            <div className="aspect-[9/16] w-full max-w-[280px] md:max-w-[320px] mx-auto rounded-lg overflow-hidden bg-black">
+              <video
+                src={demoVideo}
+                controls
+                className="w-full h-full object-contain"
+                playsInline
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -347,60 +376,6 @@ export default function CaseStudy() {
           </div>
         </div>
 
-        {/* Drawing App */}
-        <div className="text-center mb-12 mt-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-[#52D1C9] text-2xl">✧</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-              Drawing App
-            </h2>
-          </div>
-          <p className="text-xl text-gray-600 dark:text-gray-400">
-            Figma design to React Native implementation
-          </p>
-        </div>
-
-        <div className="mt-12">
-          <div className="flex items-center gap-3 mb-8">
-            <Image size={24} className="text-[#52D1C9]" />
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Figma Wireframe Design
-            </h3>
-          </div>
-          <div className="soft-card overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-12">
-            <div className="text-center">
-              <img
-                src={wireframe}
-                className="w-md h-sm rounded-md mx-auto  max-w-full h-auto mb-4"
-              />
-              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                designed by Charisse Yeh on Figma
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12">
-          <div className="flex items-center gap-3 mb-8">
-            <Video size={24} className="text-[#52D1C9]" />
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Demo Video
-            </h3>
-          </div>
-
-          <div className="soft-card overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-6 md:p-12">
-            <div className="aspect-video w-full max-w-xl mx-auto rounded-lg overflow-hidden">
-              <video
-                src={demoVideo}
-                controls
-                className="w-full h-full object-contain"
-                playsInline
-              >
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

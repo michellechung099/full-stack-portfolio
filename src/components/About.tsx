@@ -11,7 +11,7 @@ export default function About() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8">
           <div className="soft-card p-8">
             <Briefcase className="text-[#52D1C9] mb-4" size={32} />
             <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
@@ -34,14 +34,6 @@ export default function About() {
               App Academy — Full-Stack Web Development.
             </p>
           </div>
-        </div>
-
-        <div className="soft-card p-8 bg-gradient-to-r from-[#FFF8FB] to-[#fffefe] dark:from-gray-800 dark:to-gray-800">
-          <p className="text-gray-800 dark:text-gray-200 text-lg leading-relaxed">
-            I specialize in building end-to-end applications, from React Native
-            interfaces to FastAPI services. I apply AI thoughtfully, only where
-            it meaningfully improves usability rather than adding complexity.
-          </p>
         </div>
       </div>
     </section>

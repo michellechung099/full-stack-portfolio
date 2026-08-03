@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import HowIBuild from "./components/HowIBuild";
 import Projects from "./components/Projects";
 import CaseStudy from "./components/CaseStudy";
 import Skills from "./components/Skills";
@@ -41,7 +40,6 @@ function App() {
       <Navigation />
       <Hero />
       <About />
-      <HowIBuild />
       <CaseStudy />
       <Skills />
       <Experience />

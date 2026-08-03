@@ -21,13 +21,13 @@ export default function Navigation() {
   };
 
   const formatNavName = (name: string) => {
+    if (name === "case-study") return "Projects";
     return name.replace("-", " ");
   };
 
   const navItems = [
     "home",
     "about",
-    "approach",
     "case-study",
     "skills",
     "experience",
@@ -97,7 +97,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection(item)}
                 className="block w-full text-left py-3 text-gray-700 dark:text-gray-300 hover:text-[#52D1C9] transition-colors capitalize"
               >
-                {item}
+                {formatNavName(item)}
               </button>
             ))}
           </div>

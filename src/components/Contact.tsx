@@ -103,7 +103,7 @@ export default function Contact() {
                 Michelle Chung
               </h3>
               <p className="text-[#52D1C9] font-semibold mb-4">
-                Full-Stack Software Engineer
+                Product Engineer
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
                 Building reliable products with React Native, FastAPI, Next.js,
