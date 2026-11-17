@@ -92,7 +92,7 @@ export default function Hero() {
         />
 
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Building AI-powered apps and automated workflows end-to-end
+          Building AI-powered products and automating complex workflows
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
