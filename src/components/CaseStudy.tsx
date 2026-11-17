@@ -25,26 +25,19 @@ const SKIN_STORY_DEMO = {
 
 export default function CaseStudy() {
   const highlights = [
-    "Async Playwright scraper for ingredient extraction",
-    "FastAPI API product lookup and ingredient classification",
-    "Relational data model (Products ↔ Ingredients) via SQLModel",
-    "Cache-first search with database lookup and fallback scraping",
-    "React Native search and ingredient safety UI",
+    "Async Playwright scraper with fallback and caching",
+    "FastAPI ingredient classification and product lookup",
+    "Normalized product–ingredient relationships via SQLModel",
   ];
 
   const results = [
-    "Reduced scrape time by 24% after migrating from Selenium to Playwright.",
-    "Improved lookup recovery with persisted results and rate-limited fallback scraping.",
-    "Prevented duplicate ingredient mappings through normalized matching and batched inserts.",
-    "Released a public TestFlight build with a read-only demo account.",
+    "24% faster scraping after migrating Selenium to Playwright",
+    "Improved product lookup reliability through caching and fallback scraping",
+    "Shipped iOS app to TestFlight with a demo account",
   ];
 
   const screenshots = [
     skinstory1,
-    onboarding1,
-    onboarding2,
-    onboarding3,
-    onboarding4,
     journal1,
     skinstory2,
     skinstory3,
@@ -54,6 +47,10 @@ export default function CaseStudy() {
     skinstory6,
     skinstory7,
     skinstory8,
+    onboarding1,
+    onboarding2,
+    onboarding3,
+    onboarding4,
   ];
 
   return (
@@ -70,7 +67,7 @@ export default function CaseStudy() {
             </span>
           </div>
           <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-[#52D1C9] text-2xl">✧</span>
+            {/* <span className="text-[#52D1C9] text-2xl">✧</span> */}
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
               Skin Story
             </h2>
@@ -89,9 +86,8 @@ export default function CaseStudy() {
                   Problem
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  People with sensitive skin struggle to connect irritation to
-                  specific ingredients. Tracking is fragmented across products,
-                  routines, and photos, so patterns are hard to spot and repeat.
+                  Identifying skincare triggers is difficult when products,
+                  routines, and skin reactions aren't tracked together.
                 </p>
               </div>
 
@@ -101,12 +97,9 @@ export default function CaseStudy() {
                   Solution
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Skin Story helps users check ingredient safety, log routines
-                  with photos, and identify potential ingredient triggers as
-                  data accumulates. I built the full product end-to-end: React
-                  Native app, FastAPI backend, Supabase data layer, and a
-                  Playwright-based ingestion pipeline that scrapes, categorizes,
-                  and persists ingredient data.
+                  Built Skin Story, an AI-powered skincare journal that tracks
+                  reactions, analyzes ingredients, and identifies potential
+                  triggers.
                 </p>
               </div>
 
@@ -118,22 +111,21 @@ export default function CaseStudy() {
                 <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                   <li className="flex items-start gap-2">
                     <span className="text-[#52D1C9] mt-1">▹</span>
-                    <span>Owned product UX end-to-end</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-[#52D1C9] mt-1">▹</span>
                     <span>
-                      Architected backend services (FastAPI + SQLModel +
-                      Supabase)
+                      Designed and built the React Native app end-to-end
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#52D1C9] mt-1">▹</span>
-                    <span>Built Playwright scraping pipeline</span>
+                    <span>
+                      Architected FastAPI backend and Supabase database
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-[#52D1C9] mt-1">▹</span>
-                    <span>Shipped React Native UI</span>
+                    <span>
+                      Developed automated ingredient extraction pipeline
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -230,10 +222,10 @@ export default function CaseStudy() {
             </h3>
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-            Skin Story started as a tool I wanted for myself. I journaled daily
-            to design realistic flows, benchmarked Selenium vs Playwright, and
-            built the backend from scratch. It became a personal obsession that
-            blends UX, systems engineering, and AI-empowered workflows.
+            Skin Story started as a solution to my own skincare struggles. I
+            turned daily journaling into a working product, designing the UX and
+            building the backend from scratch. It brought together my interests
+            in product design, engineering, and AI.
           </p>
         </div>
 
