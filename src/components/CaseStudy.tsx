@@ -64,7 +64,7 @@ export default function CaseStudy() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#E6FAF8] dark:bg-[#52D1C9]/20 rounded-full mb-6 border border-[#CCFBF1] dark:border-[#52D1C9]/40">
-            <Sparkles size={16} className="text-[#52D1C9]" />
+            {/* <Sparkles size={16} className="text-[#52D1C9]" /> */}
             <span className="text-[#0D9488] dark:text-[#52D1C9] text-sm font-semibold">
               FEATURED PROJECT
             </span>
@@ -347,9 +347,9 @@ export default function CaseStudy() {
                 Review, filter, and manage freelancer worklogs before payment
                 processing.
                 <br></br>
-                <span className="text-sm font-light text-gray-400 dark:text-gray-500">
+                {/* <span className="text-sm font-light text-gray-400 dark:text-gray-500">
                   Developed for a GenieX technical assessment.
-                </span>
+                </span> */}
               </p>
             </div>
           </div>
@@ -375,7 +375,6 @@ export default function CaseStudy() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

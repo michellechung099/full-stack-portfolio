@@ -50,7 +50,7 @@ export default function Projects() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-center gap-3 mb-4">
-          <span className="text-[#52D1C9] text-2xl">✧</span>
+          {/* <span className="text-[#52D1C9] text-2xl">✧</span> */}
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white">
             Featured Projects
           </h2>

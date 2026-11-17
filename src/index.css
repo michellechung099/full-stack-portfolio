@@ -115,7 +115,10 @@ body {
 
   .btn-gradient {
     background: linear-gradient(135deg, #52d1c9 0%, #3fbfb7 100%);
-    transition: all 0.3s ease;
+    transition:
+      background 0.3s ease,
+      box-shadow 0.3s ease,
+      gap 0.3s ease;
     border-radius: 32px;
     box-shadow: 0 4px 20px rgba(82, 209, 201, 0.2);
   }
@@ -123,14 +126,16 @@ body {
   .btn-gradient:hover {
     background: linear-gradient(135deg, #6ee7df 0%, #52d1c9 100%);
     box-shadow: 0 4px 20px rgba(82, 209, 201, 0.35);
-    transform: translateY(-1px);
   }
 
   .btn-gradient-outline {
     background: #fffefe;
     border: 2px solid #52d1c9;
     border-radius: 32px;
-    transition: all 0.3s ease;
+    transition:
+      background 0.3s ease,
+      color 0.3s ease,
+      box-shadow 0.3s ease;
     color: #52d1c9;
   }
 
@@ -143,7 +148,6 @@ body {
     background: #52d1c9;
     color: #fffefe;
     box-shadow: 0 4px 20px rgba(82, 209, 201, 0.35);
-    transform: translateY(-1px);
   }
 }
 

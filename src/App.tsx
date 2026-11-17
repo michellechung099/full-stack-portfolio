@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { MotionConfig } from "motion/react";
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -36,15 +37,17 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen text-gray-900 dark:text-gray-100 dark:bg-gray-900 transition-colors duration-300">
-      <Navigation />
-      <Hero />
-      <About />
-      <CaseStudy />
-      <Skills />
-      <Experience />
-      <Contact />
-    </div>
+    <MotionConfig reducedMotion="user">
+      <div className="min-h-screen text-gray-900 dark:text-gray-100 dark:bg-gray-900 transition-colors duration-300">
+        <Navigation />
+        <Hero />
+        <About />
+        <CaseStudy />
+        <Skills />
+        <Experience />
+        <Contact />
+      </div>
+    </MotionConfig>
   );
 }
 

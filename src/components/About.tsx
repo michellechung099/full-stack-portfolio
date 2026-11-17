@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center justify-center gap-3 mb-12">
-          <span className="text-[#52D1C9] text-2xl">✧</span>
+          {/* <span className="text-[#52D1C9] text-2xl">✧</span> */}
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white">
             About Me
           </h2>
